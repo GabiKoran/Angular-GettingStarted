@@ -94,4 +94,8 @@ export class ProductListComponent implements OnInit{
     ngOnInit(): void {
       throw new Error('Method not implemented.');
     }
+
+    onRatingClicked(message: string): void { 
+      this.pageTitle = 'Product List: ' + message;
+    }
 }
